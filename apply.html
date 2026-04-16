@@ -28,8 +28,8 @@
             <fieldset>
                 <legend>Job Information</legend>
                 <label for="job-ref">Job Reference Number</label>
-                <input type="text" id="job-ref" name="job_reference" required pattern="[A-Za-z0-9]{5}" maxlength="5" placeholder="e.g. AB1C2" autocomplete="off" aria-describedby="job-ref-hint" />
-                <span id="job-ref-hint" class="field-hint">Exactly 5 alphanumeric characters.</span>
+                <input type="text" id="job-ref" name="job_reference" required pattern="[A-Za-z0-9]{5}" maxlength="5" placeholder="e.g. AB1C2" aria-describedby="job-ref-hint" />
+                <span id="job-ref-hint" >Exactly 5 alphanumeric characters.</span>
             </fieldset>
 
             <!-- Applicant personal details -->
@@ -37,15 +37,15 @@
                 <legend>Personal Details</legend>
                 <label for="first-name">First Name</label>
                 <input type="text" id="first-name" name="first_name" required pattern="[A-Za-z]{1,20}" maxlength="20" placeholder="e.g. John" />
-                <span id="first-name-hint" class="field-hint">Letters only, max 20 characters.</span>
+                <span id="first-name-hint" >Letters only, max 20 characters.</span>
 
                 <label for="last-name">Last Name</label>
                 <input type="text" id="last-name" name="last_name" required pattern="[A-Za-z]{1,20}" maxlength="20" placeholder="e.g. Smith"/>
-                <span id="last-name-hint" class="field-hint">Letters only, max 20 characters.</span>
+                <span id="last-name-hint" >Letters only, max 20 characters.</span>
 
                 <label for="dob">Date of Birth</label>
                 <input type="text" id="dob" name="date_of_birth" required pattern="(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/[0-9]{4}" maxlength="10" placeholder="dd/mm/yyyy" />
-                <span id="dob-hint" class="field-hint">Format: dd/mm/yyyy</span>
+                <span id="dob-hint">Format: dd/mm/yyyy</span>
 
                 <!-- Gender uses its own fieldset as required by the spec -->
                 <fieldset>
@@ -61,11 +61,11 @@
                 <legend>Contact &amp; Address</legend> <!--"&amp;" is used to get a & and not just a space -->
                 <label for="street-address">Street Address</label>
                 <input type="text" id="street-address" name="street_address" required maxlength="40" placeholder="e.g. 123 Collins Street"/>
-                <span id="street-address-hint" class="field-hint">Max 40 characters.</span>
+                <span id="street-address-hint" >Max 40 characters.</span>
 
                 <label for="suburb">Suburb / Town</label>
                 <input type="text" id="suburb" name="suburb" required maxlength="40" placeholder="e.g. Melbourne" />
-                <span id="suburb-hint" class="field-hint">Max 40 characters.</span>
+                <span id="suburb-hint" >Max 40 characters.</span>
 
                 <label for="state">State</label>
                 <select id="state" name="state" required>
@@ -82,14 +82,14 @@
 
                 <label for="postcode">Postcode</label>
                 <input type="text" id="postcode" name="postcode" required pattern="[0-9]{4}" maxlength="4" placeholder="e.g. 3000" />
-                <span id="postcode-hint" class="field-hint">Exactly 4 digits.</span>
+                <span id="postcode-hint" >Exactly 4 digits.</span>
 
                 <label for="email">Email Address</label>
                 <input type="email" id="email" name="email" required placeholder="e.g. jane.smith@email.com" />
 
                 <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="phone" required pattern="[0-9]{8,12}" maxlength="12" placeholder="e.g. 0412345678" />
-                <span id="phone-hint" class="field-hint">8 to 12 digits, numbers only.</span>
+                <span id="phone-hint" >8 to 12 digits, numbers only.</span>
             </fieldset>
 
             <!-- Applicant skills -->
