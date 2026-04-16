@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Creative Digital Media Agency</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Home - MediaFlare</title>
+    <link rel="stylesheet" href="assets/css/index.css" />
 </head>
 <body>
-    <nav>
+    <nav aria-label="Main navigation">
+        <img src="assets/mediaflare_logo.svg" alt="mediaflare logo">
          <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="jobs.html">Job Description</a></li>
@@ -15,6 +16,82 @@
             <li><a href="about.html">About</a></li>
         </ul>
     </nav>
+    
+    <section>
+        <h1>MediaFlare</h1>
+        <p>Creative ideas for bold digital brands.</p>
+        <p>MediaFlare is a creative digital media agency that builds engaging websites,
+         branding and digital content for modern businesses.
+        </p>
+        <img src="assets/team-photo.jpg" alt="MediaFlare team working together in a creative studio">
+    </section>
+
+    <main>
+        <section>
+            <h2>Search Opportunities</h2>
+            <form action="jobs.html" method="get">
+                <p>
+                    <label for="site-search">Search jobs:</label>
+                    <input type="text" id="site-search" name="search" placeholder="enter a role title">
+                    <button type="submit">Search</button>
+                </p>
+            </form>
+        </section>
+
+        <section>
+            <h2>Why Join MediaFlare?</h2>
+            <p>
+                We focus on creativity, collaboration, accessibility and strong digital experiences.
+            </p>
+
+            <table>
+                <caption>MediaFlare team snapshot</caption>
+                <thead>
+                    <tr>
+                        <th>Team Area</th>
+                        <th>Focus</th>
+                        <th>Openings</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Design</td>
+                        <td>User-friendly layouts and branding</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Front-End Development</td>
+                        <td>accessible and responsive pages</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Digital Content</td>
+                        <td>Creative campaigns and media production</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><strong>Total current openings</strong></td>
+                        <td>5</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section>
+            <h2>Inclusive Employment</h2>
+            <p>
+                MediaFlare acknowledges the traditional Custodians of the lands on which we work We pay our respects to elders past and present and welcome applications from Aboriginal and Torres Strait Islander peoples.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="https://jra">Jira Project</a></p>
+        <p><a href="https://github.com/106514992/COS10026-Applied-Web-Project-Part-1-of-2">GitHub Repository</a></p>
+        <p><a href="mailto:info@mediaflare.com.au">info@mediaflare.com.au</a></p>
+    </footer>
 
 </body>
 </html>
