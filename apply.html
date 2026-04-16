@@ -4,16 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jobs - Creative Digital Media Agency</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-</head>
+    <link rel="stylesheet" href="assets/style.css" />
+    <!-- EMBEDDED CSS EXAMPLE (required per spec)
+         Styles the page-level heading that introduces the form.
+         Kept here so it's clearly an embedded rule, separate from style.css. -->
+    <style>
+        /* Embedded: decorative pink accent bar above the form heading */
+        .form-heading {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--navy, #1a1f36);
+            margin-bottom: 1.75rem;
+            padding-left: 1rem;
+            border-left: 4px solid #e8385a;   /* brand pink accent */
+            letter-spacing: -0.01em;
+            line-height: 1.25;
+        }
+
+        .form-heading span {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: #4a4f6a;
+            letter-spacing: 0.02em;
+            margin-top: 0.25rem;
+        }
+    </style>
 <body>
         <!-- header and main navigation -->
     <nav>
+        <img src="assets/mediaflare_logo.svg" alt="MediaFlare logo" height="40" />
          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="jobs.html">Job Description</a></li>
-            <li><a href="apply.html">Apply</a></li>
-            <li><a href="about.html">About</a></li>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="jobs.html">Job Description</a></p>
+            <p><a href="apply.html">Apply</a></p>
+            <p><a href="about.html">About</a></p>
         </ul>
     </nav>
 
@@ -25,8 +50,8 @@
         <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" novalidate>
 
             <!-- Job reference -->
+            <h1>Job Information</h1>
             <fieldset>
-                <legend>Job Information</legend>
                 <label for="job-ref">Job Reference Number</label>
                 <input type="text" id="job-ref" name="job_reference" required pattern="[A-Za-z0-9]{5}" maxlength="5" placeholder="e.g. AB1C2" aria-describedby="job-ref-hint" />
                 <span id="job-ref-hint" >Exactly 5 alphanumeric characters.</span>
@@ -48,12 +73,12 @@
                 <span id="dob-hint">Format: dd/mm/yyyy</span>
 
                 <!-- Gender uses its own fieldset as required by the spec -->
-                <fieldset>
-                    <legend>Gender</legend>
-                    <label><input type="radio" name="gender" value="male" required /> Male</label>
-                    <label><input type="radio" name="gender" value="female" /> Female</label>
-                    <label><input type="radio" name="gender" value="prefer-not-to-say" /> Prefer not to say</label>
-                </fieldset>
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <label><input type="radio" name="gender" value="male" required /> Male</label>
+                        <label><input type="radio" name="gender" value="female" /> Female</label>
+                        <label><input type="radio" name="gender" value="prefer-not-to-say" /> Prefer not to say</label>
+                    </fieldset>
             </fieldset>
 
             <!-- Applicant contact and address details -->
@@ -97,6 +122,7 @@
                 <legend>Skills</legend>
 
                 <!-- Checkboxes for predefined skills, first checkbox carries require at least one selection -->
+                <!-- Skill list skills were generated with AI assistance, creation of the checkbox form elements was done manually -->
                 <fieldset>
                     <legend>Skill List</legend>
                     <label><input type="checkbox" name="skills" value="html-css" required /> HTML &amp; CSS</label> 
