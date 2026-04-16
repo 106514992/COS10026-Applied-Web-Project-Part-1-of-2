@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jobs - Creative Digital Media Agency</title>
     <link rel="stylesheet" href="assets/style.css" />
-    <!-- EMBEDDED CSS EXAMPLE (required per spec)
+    <!-- EMBEDDED CSS 
          Styles the page-level heading that introduces the form.
          Kept here so it's clearly an embedded rule, separate from style.css. -->
     <style>
@@ -30,15 +30,17 @@
             margin-top: 0.25rem;
         }
     </style>
+</head>
+
 <body>
         <!-- header and main navigation -->
     <nav>
         <img src="assets/mediaflare_logo.svg" alt="MediaFlare logo" height="40" />
          <ul>
-            <p><a href="index.html">Home</a></p>
-            <p><a href="jobs.html">Job Description</a></p>
-            <p><a href="apply.html">Apply</a></p>
-            <p><a href="about.html">About</a></p>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Job Description</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
     </nav>
 
@@ -46,11 +48,14 @@
 
     <!-- Main page content -->
     <main>
+        <!-- Form heading with inline CSS styling -->
+        <h1 class="form-heading" style="margin-top: 0.25rem;"> Job Application
+            <span>Fill in the form below — all fields marked as required must be completed.</span>
+        </h1>
 
         <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" novalidate>
 
             <!-- Job reference -->
-            <h1>Job Information</h1>
             <fieldset>
                 <label for="job-ref">Job Reference Number</label>
                 <input type="text" id="job-ref" name="job_reference" required pattern="[A-Za-z0-9]{5}" maxlength="5" placeholder="e.g. AB1C2" aria-describedby="job-ref-hint" />
