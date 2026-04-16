@@ -47,7 +47,7 @@
                 <input type="text" id="dob" name="date_of_birth" required pattern="(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/[0-9]{4}" maxlength="10" placeholder="dd/mm/yyyy" />
                 <span id="dob-hint" class="field-hint">Format: dd/mm/yyyy</span>
 
-                <!-- Gender uses a nested fieldset as required by the spec -->
+                <!-- Gender uses its own fieldset as required by the spec -->
                 <fieldset>
                     <legend>Gender</legend>
                     <label><input type="radio" name="gender" value="male" required /> Male</label>
@@ -96,7 +96,7 @@
             <fieldset>
                 <legend>Skills</legend>
 
-                <!-- Checkboxes for predefined skills; first checkbox carries required to enforce at least one selection -->
+                <!-- Checkboxes for predefined skills, first checkbox carries require at least one selection -->
                 <fieldset>
                     <legend>Skill List</legend>
                     <label><input type="checkbox" name="skills" value="html-css" required /> HTML &amp; CSS</label> 
@@ -109,7 +109,7 @@
                     <label><input type="checkbox" name="skills" value="motion-graphics" /> Motion Graphics</label>
                 </fieldset>
 
-                <!-- Free-text field for any skills not listed above; not required per spec -->
+                <!-- Free-text field for any skills not listed above, EXTRA ADDITION NOT REQUIRED -->
                 <label for="other-skills">Other Skills</label>
                 <textarea id="other-skills" name="other_skills" rows="5" placeholder="Describe any additional skills or experience relevant to this role..."></textarea>
             </fieldset>
