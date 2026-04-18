@@ -43,7 +43,7 @@
 
 <body>
     <!-- Navigation -->
-    <nav>
+    <nav aria-label="Main navigation">
         <img src="assets/mediaflare_logo.svg" alt="MediaFlare logo" height="40">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -55,14 +55,14 @@
 
     <!-- Page header -->
     <header class="jobs-hero">
-        <div class="hero-shape"></div>
+        <div class="hero-shape" aria-hidden="true"></div>
         <h1 id="jobs-page-title">Current Job Openings</h1>
         <p>Positions available with us today</p>
     </header>
 
-    <main id="jobs-main">
+    <main id="jobs-main" aria-label="Job listings">
                 <!-- Aside -->
-        <aside id="jobs-sidebar">
+        <aside id="jobs-sidebar" aria-label="Why work with us">
             <section id="jobs-aside" class="jobs-section-container">
                 <h2 style="margin: 1rem 0; font-size: 1.17em;">Why Work With Us?</h2>
                 <p>We offer a supportive work environment, professional development opportunities, and flexible
@@ -75,9 +75,9 @@
             <!-- job listing details such as key responsibility and description generated with Copilot AI -->
 
             <!-- Job 1 -->
-            <section class="jobs-section-container">
+            <section class="jobs-section-container" aria-labelledby="job1-sd123">
                 <header class="job-header">
-                    <h2 class="section-title">Software Developer</h2>
+                    <h2 class="section-title" id="job1-sd123">Software Developer</h2>
                     <p class="jobs-reference-number"><strong>Reference Number:</strong> (Ref: SD123)</p>
                 </header>
                 <p><strong>Description:</strong> We are seeking a motivated software developer to build and maintain
@@ -109,9 +109,9 @@
             </section>
 
             <!-- job 2 -->
-            <section class="jobs-section-container">
+            <section class="jobs-section-container" aria-labelledby="job2-it456">
                 <header class="job-header">
-                    <h2 class="section-title">IT Support Technician</h2>
+                    <h2 class="section-title" id="job2-it456">IT Support Technician</h2>
                     <p class="jobs-reference-number"><strong>Reference Number:</strong> (Ref: IT456)</p>
                 </header>
                 <p><strong>Description:</strong> Provide technical support to staff and ensure smooth operation of
@@ -152,7 +152,7 @@
     <footer>
         <p>&copy; 2026 MediaFlare Agency. All rights reserved.</p>
         <p>
-            <a href="mailto:info@mediaflare.com.au">info@mediaflare.com.au</a>
+            <a href="mailto:info@mediaflare.com.au" aria-label="Email us at info@mediaflare.com.au">info@mediaflare.com.au</a>
         </p>
     </footer>
 
