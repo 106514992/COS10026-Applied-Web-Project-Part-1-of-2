@@ -191,3 +191,56 @@ footer a:hover {
         gap: 0.5rem;
     }
 }
+
+
+/* Group Photo */
+
+figure.group-photo {
+    border: 3px solid #1a1a2e;
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+figure.group-photo figcaption {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Fun Facts Table */
+table.fun-facts {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table.fun-facts caption {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: #1a1a2e;
+    text-align: left;
+}
+
+table.fun-facts th {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    padding: 0.75rem 1rem;
+    text-align: left;
+}
+
+table.fun-facts td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+table.fun-facts tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table.fun-facts tr:hover {
+    background-color: #fde8ec;
+}
