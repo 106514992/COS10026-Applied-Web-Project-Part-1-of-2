@@ -443,35 +443,13 @@ table.fun-facts tr:hover {
 
 
 /* ==========================================================
-   jobs.css — Job listing page styles- Charlie
+   jobs.css — Job listing page styles - Charlie
    Every selector is matched to classes and IDs on jobs.html. I also ensured no other pages are affected by these styles
    ========================================================== */
 
-/* Jobs page sections */
-.jobs-section-container {
-    margin-bottom: 2rem;
-    padding: 2rem;
-    background-color: #ffffff;
-    border-radius: 8px;
-}
-#jobs-main {
-    display: flex;
-    gap: 0;
-    margin: auto;
-    /*centers main content horizontally */
-    max-width: 1100px;
-}
 
-#jobs-content {
-    margin: 2rem auto;
-    padding: 2rem;
-    flex: 3;
-}
-.job-container {
-    border: 1px solid #ccc;
-    margin: 0.1rem;
-    padding: 1em;
-}
+
+/* Jobs page hero styling */
 
 .jobs-hero {
     background-color: #1a1a2e;
@@ -479,17 +457,94 @@ table.fun-facts tr:hover {
     padding: 4rem 2rem;
     text-align: center;
     overflow: hidden;
+    position: relative;
+}
+
+/* Animated shape in hero */
+.hero-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #e94560;
+    clip-path: polygon(52% 0%, 0% 0%, 0% 100%, 100% 100%); /*(x,y) for each corner (clockwise) */
+    opacity: 0.15;
+    transform: translateX(-100%);
+    animation: shapeSlide 0.8s cubic-bezier(0.2, 1, 0.3, 1) forwards;
+    animation-delay: 0.5s;
+}
+
+/* Animation for hero shape */
+@keyframes shapeSlide {
+    to {
+        transform: translateX(0);
+    }
+}
+
+#jobs-page-title {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: titleReveal 0.9s cubic-bezier(0.2, 1, 0.3, 1) forwards;
+    animation-delay: 0.2s;
 }
 
 .jobs-hero h1 {
     font-size: 2.5rem;
     color: #e94560;
     margin-bottom: 0.5rem;
+    position: relative;
 }
 
 .jobs-hero p {
     font-size: 1.1rem;
     color: #cccccc;
+    position: relative;
+}
+
+/* Animation for hero h1 */
+@keyframes titleReveal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Main page content styling */
+
+#jobs-main {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Contains all job listings */
+#jobs-content {
+    margin-right: calc(25% + 2rem);
+    padding: 2rem;
+}
+
+/* For any sections on Jobs page */
+.jobs-section-container {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.jobs-section-container h3 {
+    margin-top: 1rem;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.job-header h2 {
+    margin-right: 2rem;
 }
 
 .jobs-reference-number {
@@ -506,33 +561,4 @@ table.fun-facts tr:hover {
 
 #jobs-content section ol {
     margin-left: 30px;
-}
-
-.job-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-.job-header h2 {
-    margin-right: 2rem;
-}
-
-.jobs-section-container h3 {
-    margin-top: 1rem;
-}
-
-#jobs-page-title {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: titleReveal 0.9s cubic-bezier(0.2, 1, 0.3, 1) forwards;
-    animation-delay: 0.2s;
-}
-
-@keyframes titleReveal {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
