@@ -7,38 +7,44 @@
     <meta name="author" content="Charlie Payne">
     <title>Jobs - Creative Digital Media Agency</title>
     <link rel="stylesheet" href="assets/style.css" />
+    
     <style>
-        /* generated aside with Copilot AI (for efficiency) to be floaded right, 25% width, styled with margin, padding and border */
-        aside {
+        #jobs-sidebar {
+            /* Required for assignment */
             float: right;
             width: 25%;
-            margin: 0 20px;
-            padding: 15px;
-            border: 1px solid #ccc;
-        }
+            margin: 4rem auto;
+            padding: 0rem;
+            border: 1px hidden #cccccc00;
 
-        .container {
-            display: flex;
-        }
-
-        main {
-            flex: 3;
-        }
-
-        aside {
             flex: 1;
+            margin-right: 2rem;
+            margin-bottom: 6rem;
+            border-radius: 8px;
+            flex: 1;
+            background-color: #ffffff;
+            max-width: 1100px;
+        }
+        
+        @media (max-width: 821px) {
+            #jobs-main {
+                flex-direction: column;
+            }
+
+            #jobs-sidebar {
+                order: -1;
+                width: 100%;
+                margin: 0;
+            }
         }
 
-        .job-container {
-            border: 1px solid #ccc;
-            margin: 0.1rem;
-            padding: 1em;
-        }
     </style>
 </head>
 
 <body>
+    <!-- Navigation -->
     <nav>
+        <img src="assets/mediaflare_logo.svg" alt="MediaFlare logo" height="40" />
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="jobs.html">Job Description</a></li>
@@ -47,112 +53,108 @@
         </ul>
     </nav>
 
-    <!DOCTYPE html>
-    <html lang="en">
+    <!-- Page header -->
+    <header class="jobs-hero">
+        <div class="hero-shape"></div>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Jobs Available</title>
-    </head>
+        <h1 id="jobs-page-title">Current Job Openings</h1>
+        <p>Positions available with us today</p>
+    </header>
 
-    <body>
+    <main id="jobs-main">
+        <section id="jobs-content">
+            <!-- job listing details such as key responsibility and description generated with Copilot AI -->
 
-        <header>
-            <h1>Current Job Openings</h1>
-        </header>
+            <!-- Job 1 -->
+            <section class="jobs-section-container">
+                <header class="job-header">
+                    <h2 class="section-title">Software Developer</h2>
+                    <p class="jobs-reference-number"><strong>Reference Number:</strong> (Ref: SD123)</p>
+                </header>
+                <p><strong>Description:</strong> We are seeking a motivated software developer to build and maintain
+                    web applications in a collaborative agile team.</p>
+                <h3>Salary & Reporting</h3>
+                <p>Salary: $80,000 - $100,000 per year</p>
+                <p>Reports to: Senior Development Manager</p>
 
-        <div class="container">
-            <main style="border: 1px solid #ccc;">
+                <h3>Key Responsibilities</h3>
+                <ul>
+                    <li>Design, develop, and test web applications</li>
+                    <li>Collaborate with cross-functional teams</li>
+                    <li>Maintain and improve existing systems</li>
+                </ul>
 
-                <!-- Some job listing details such as key responsibility and description generated with Copilot AI -->
-                <!-- job 1 -->
-                <section class="job-container">
-                    <h2>Software Developer</h2>
-                    <p><strong>Reference Number:</strong> (Ref: SD123)</p>
-                    <p><strong>Description:</strong> We are seeking a motivated software developer to build and maintain
-                        web applications in a collaborative agile team.</p>
+                <h3>Requirements</h3>
+                <h4>Essential</h4>
+                <ol>
+                    <li>Bachelor's degree in IT or related field</li>
+                    <li>Experience with HTML, CSS, and JavaScript</li>
+                    <li>Strong problem-solving skills</li>
+                </ol>
 
-                    <h3>Salary & Reporting</h3>
-                    <p>Salary: $80,000 - $100,000 per year</p>
-                    <p>Reports to: Senior Development Manager</p>
+                <h4>Preferable</h4>
+                <ul>
+                    <li>Experience with React or similar frameworks</li>
+                    <li>Knowledge of backend development</li>
+                </ul>
+            </section>
 
-                    <h3>Key Responsibilities</h3>
-                    <ul>
-                        <li>Design, develop, and test web applications</li>
-                        <li>Collaborate with cross-functional teams</li>
-                        <li>Maintain and improve existing systems</li>
-                    </ul>
+            <!-- job 2 -->
+            <section class="jobs-section-container">
+                <header class="job-header">
+                    <h2 class="section-title">IT Support Technician (Ref: IT456)</h2>
+                    <p class="jobs-reference-number"><strong>Reference Number:</strong> (Ref: IT456)</p>
+                </header>
+                <p><strong>Description:</strong> Provide technical support to staff and ensure smooth operation of
+                    IT systems across the organisation.</p>
 
-                    <h3>Requirements</h3>
-                    <h4>Essential</h4>
-                    <ol>
-                        <li>Bachelor's degree in IT or related field</li>
-                        <li>Experience with HTML, CSS, and JavaScript</li>
-                        <li>Strong problem-solving skills</li>
-                    </ol>
+                <h3>Salary & Reporting</h3>
+                <p>Salary: $60,000 - $75,000 per year</p>
+                <p>Reports to: IT Operations Manager</p>
 
-                    <h4>Preferable</h4>
-                    <ul>
-                        <li>Experience with React or similar frameworks</li>
-                        <li>Knowledge of backend development</li>
-                    </ul>
-                </section>
+                <h3>Key Responsibilities</h3>
+                <ul>
+                    <li>Respond to help desk requests</li>
+                    <li>Troubleshoot hardware and software issues</li>
+                    <li>Maintain system documentation</li>
+                </ul>
 
-                <!-- job 2 -->
-                <section class="job-container">
-                    <h2>IT Support Technician (Ref: IT456)</h2>
-                    <p><strong>Reference Number:</strong> (Ref: IT456)</p>
+                <h3>Requirements</h3>
+                <h4>Essential</h4>
+                <ol>
+                    <li>Diploma in Information Technology or equivalent</li>
+                    <li>Strong communication skills</li>
+                    <li>Experience with Windows and networking basics</li>
+                </ol>
 
-                    <p><strong>Description:</strong> Provide technical support to staff and ensure smooth operation of
-                        IT systems across the organisation.</p>
+                <h4>Preferable</h4>
+                <ul>
+                    <li>Certifications such as CompTIA A+</li>
+                    <li>Experience in a corporate IT environment</li>
+                </ul>
+            </section>
 
-                    <h3>Salary & Reporting</h3>
-                    <p>Salary: $60,000 - $75,000 per year</p>
-                    <p>Reports to: IT Operations Manager</p>
+        </section>
 
-                    <h3>Key Responsibilities</h3>
-                    <ul>
-                        <li>Respond to help desk requests</li>
-                        <li>Troubleshoot hardware and software issues</li>
-                        <li>Maintain system documentation</li>
-                    </ul>
-
-                    <h3>Requirements</h3>
-                    <h4>Essential</h4>
-                    <ol>
-                        <li>Diploma in Information Technology or equivalent</li>
-                        <li>Strong communication skills</li>
-                        <li>Experience with Windows and networking basics</li>
-                    </ol>
-
-                    <h4>Preferable</h4>
-                    <ul>
-                        <li>Certifications such as CompTIA A+</li>
-                        <li>Experience in a corporate IT environment</li>
-                    </ul>
-                </section>
-
-            </main>
-            <!-- Aside -->
-            <aside>
-                <h2>Why Work With Us?</h2>
+        <!-- Aside -->
+        <aside id="jobs-sidebar">
+            <section class="jobs-section-container">
+                <h3 style="margin: 1rem 0;">Why Work With Us?</h3>
                 <p>We offer a supportive work environment, professional development opportunities, and flexible
                     working
                     arrangements.</p>
-            </aside>
-        </div>
+            </section>
+        </aside>
+    </main>
 
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2026 MediaFlare Agency. All rights reserved.</p>
-            <p>
-                <a href="mailto:info@mediaflare.com.au">info@mediaflare.com.au</a>
-            </p>
-        </footer>
 
-    </body>
-
-    </html>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 MediaFlare Agency. All rights reserved.</p>
+        <p>
+            <a href="mailto:info@mediaflare.com.au">info@mediaflare.com.au</a>
+        </p>
+    </footer>
 
 </body>
 
