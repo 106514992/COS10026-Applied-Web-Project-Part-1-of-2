@@ -450,14 +450,14 @@ table.fun-facts tr:hover {
 
 /* ==========================================================
    jobs.css — Job listing page styles - Charlie
-   Every selector is matched to classes and IDs on jobs.html. I also ensured no other pages are affected by these styles
+   Every selector is matched to classes and IDs on jobs.html. I also ensured no other pages are accidentally affected by these styles
    ========================================================== */
 
 
 
-/* Jobs page hero styling */
+/* Jobs and about page hero styling */
 
-.jobs-hero {
+.jobs-hero, .about-hero {
     background-color: #1a1a2e;
     color: #ffffff;
     padding: 4rem 2rem;
@@ -477,8 +477,8 @@ table.fun-facts tr:hover {
     clip-path: polygon(52% 0%, 0% 0%, 0% 100%, 100% 100%); /*(x,y) for each corner (clockwise) */
     opacity: 0.15;
     transform: translateX(-100%);
-    animation: shapeSlide 0.8s cubic-bezier(0.2, 1, 0.3, 1) forwards;
-    animation-delay: 0.5s;
+    animation: shapeSlide 1.8s cubic-bezier(0.2, 1, 0.3, 1) forwards;
+    animation-delay: 0.2s;
 }
 
 /* Animation for hero shape */
@@ -495,14 +495,14 @@ table.fun-facts tr:hover {
     animation-delay: 0.2s;
 }
 
-.jobs-hero h1 {
+.jobs-hero h1, .about-hero h1 {
     font-size: 2.5rem;
     color: #e94560;
     margin-bottom: 0.5rem;
     position: relative;
 }
 
-.jobs-hero p {
+.jobs-hero p, .about-hero p {
     font-size: 1.1rem;
     color: #cccccc;
     position: relative;
@@ -514,6 +514,10 @@ table.fun-facts tr:hover {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+#jobs-aside {
+    background-color: transparent;
 }
 
 /* Main page content styling */
