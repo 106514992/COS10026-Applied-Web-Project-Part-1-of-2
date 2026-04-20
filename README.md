@@ -10,3 +10,4 @@ In a group of 3–4 students, you will design and build a static recruitment web
 ### G06 – Creative Digital Media Agency   
 
 A creative agency providing web design, branding, and digital content services, recruiting front‑end developers and designers to support client‑focused web projects.   
+ 
