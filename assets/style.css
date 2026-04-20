@@ -569,3 +569,164 @@ table.fun-facts tr:hover {
 #jobs-content section ol {
     margin-left: 30px;
 }
+
+.home-hero {
+    background-image:
+        linear-gradient(rgba(26, 26, 46, 0.92), rgba(26, 26, 46, 0.92)),
+        url("mediaflare_logo_transparent_bg.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, right 3rem center;
+    background-size: cover, 230px;
+}
+
+#home-main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.home-intro {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home-intro-text {
+    flex: 1 1 420px;
+}
+
+.home-intro-text p {
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.home-team-figure {
+    flex: 1 1 320px;
+    text-align: center;
+    margin: 0;
+}
+
+.home-team-figure img {
+    width: 100%;
+    max-width: 420px;
+    border: 3px solid #1a1a2e;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+.home-team-figure figcaption {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+.home-search-form {
+    margin-top: 0.5rem;
+}
+
+.home-search-row {
+    display: flex;
+    gap: 1rem;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+.home-search-field {
+    flex: 1 1 280px;
+}
+
+.home-search-field label {
+    display: block;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 0.5rem;
+}
+
+.home-search-field input[type="text"] {
+    width: 100%;
+    padding: 0.7rem 0.85rem;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    color: #1a1a2e;
+    background: #ffffff;
+}
+
+.home-search-field input[type="text"]:focus {
+    border-color: #e94560;
+    box-shadow: 0 0 0 3px rgba(233, 69, 96, 0.12);
+    outline: none;
+}
+
+.home-search-form button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+}
+
+.home-search-form button:hover {
+    transform: translateY(-1px);
+}
+
+.home-section-text {
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.home-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.home-table caption {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: #1a1a2e;
+    text-align: left;
+}
+
+.home-table th {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    padding: 0.75rem 1rem;
+    text-align: left;
+}
+
+.home-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.home-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.home-table tr:hover {
+    background-color: #fde8ec;
+}
+
+@media (max-width: 768px) {
+    .home-hero {
+        background-position: center, center bottom 1rem;
+        background-size: cover, 160px;
+    }
+
+    .home-search-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .home-search-form button {
+        width: 100%;
+    }
+}
